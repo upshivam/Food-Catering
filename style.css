@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3%;
+    background-color: #fff;
+    height: 10vh;
+    letter-spacing: 4px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1%;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li{
+    display: inline-block;
+    padding: 1% 1rem;
+    list-style: none;
+}
+
+nav a:hover, .navlinks ul li:hover{
+    background-color: rgb(179, 171, 171);
+}
+
+.backround-img{
+    background: url(/images/bgimage.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.backround-img .text{
+    top: 90%;
+    left: 5%;
+    transform: translateY(-90%);
+    position: absolute;
+}
+.backround-img .text h2{
+    letter-spacing: 4px;
+}
+
+.about{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.about-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.about-content h2{
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-img, .about-text{
+    flex-basis: 48%;
+    padding: 1rem;
+}
+.about-img img{
+    width: 100%;
+}
+
+#para1{
+    color: rgb(0, 0, 0);
+}
+
+#para2{
+    margin-top: 2rem;
+    color: rgb(94, 92, 92);
+}
+
+.menu{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.menu-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.menu-content h2{
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-img, .menu-text{
+    flex-basis: 48%;
+    padding: 1rem;
+}
+.menu-img img{
+    width: 100%;
+}
+
+.heading{
+    letter-spacing: 4px;
+    color: rgb(0, 0, 0);
+    margin-top: 3rem;
+}
+
+.para{
+    margin-top: 1rem;
+    color: rgb(94, 92, 92);
+}
+
+#contact{
+    margin-top: 3rem;
+}
+
+.info{
+    width: 95%;
+    margin: auto;
+}
+
+.info h1{
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+}
+
+.info h2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: rgb(45, 181, 235);
+}
+
+form input{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+form .btn{
+    margin-top: 1rem;
+    padding: 1rem;
+    transition: .5s;
+}
+
+form .btn:hover{
+    background: rgb(161, 157, 157);
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px){
+    #para2{
+        display: none;
+    }
+
+    .menu-content{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .navlinks ul li{
+        display: none;
+    }
+
+    .about-content{
+        display: block;
+    }
+
+    .about-img img{
+        display: none;
+    }
+
+    #para2{
+        display: block;
+    }
+}
